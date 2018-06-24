@@ -43,12 +43,12 @@ public class MainActivity extends Activity {
                 rotate.setAnimationListener(new Animation.AnimationListener() {
                     @Override
                     public void onAnimationStart(Animation animation) {
-
+                        textView.setText("");
                     }
 
                     @Override
                     public void onAnimationEnd(Animation animation) {
-
+                        textView.setText(currentNumber(360-(degree%360)));
                     }
 
                     @Override
